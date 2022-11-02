@@ -430,16 +430,6 @@ legend + * {
  
 }
 
-/* rtl:raw:
-[type="tel"],
-[type="url"],
-[type="email"],
-[type="number"] {
-  direction: ltr;
-}
-*/
-
-
 ::-webkit-color-swatch-wrapper {
   padding: 0;
 }
@@ -2332,7 +2322,7 @@ progress {
 
 
 .btn-primary {
-  color: #fff;
+  color: #565656;
   background-color: #ffc800;
   border-color: #ffc800;
 }
@@ -3194,6 +3184,12 @@ progress {
   text-decoration: none;
   white-space: nowrap;
 }
+
+.job-title {
+  font-size: 1.25rem;
+  text-transform: lowercase;
+}
+
 .navbar-nav {
   display: flex;
   flex-direction: column;
@@ -6909,9 +6905,11 @@ progress {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: #4b5258 !important;
 }
-
+.text-muted-off {
+  color: #ffffff;
+}
 .text-black-50 {
   --bs-text-opacity: 1;
   color: rgba(0, 0, 0, 0.5) !important;
@@ -10548,8 +10546,8 @@ header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
-  color: #fff;
-  background-image: url("../assets/img/workspace-1280538_1920.jpg");
+  color: #ffffff;
+  background: url("../assets/img/workspace-1280538_1920.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -10560,6 +10558,7 @@ header.masthead .masthead-subheading {
   font-style: italic;
   line-height: 1.5rem;
   margin-bottom: 25px;
+  text-shadow: #000;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 header.masthead .masthead-heading {
@@ -10743,7 +10742,7 @@ header.masthead .masthead-heading {
   height: 80px;
   margin-left: 0;
   text-align: center;
-  color: white;
+  color: #565656;
   border: 7px solid #e9ecef;
   border-radius: 100%;
   background-color: #ffc800;
